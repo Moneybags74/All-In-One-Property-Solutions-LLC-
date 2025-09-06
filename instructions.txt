@@ -1,0 +1,8 @@
+
+GitHub Pages Instructions:
+
+1. Create a GitHub account if you don't have one.
+2. Create a new repository (e.g., all-in-one-property-solutions).
+3. Upload index.html, style.css, and assets/ folder.
+4. Go to Settings -> Pages, set source to main branch, root folder.
+5. GitHub provides a URL like: https://yourusername.github.io/all-in-one-property-solutions/
