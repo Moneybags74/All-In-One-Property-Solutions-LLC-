@@ -1,15 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All-in-One Property Solutions</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-In-One Property Solutions LLC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>All-in-One Property Solutions</h1>
-<p>Placeholder website with brand colors, services, and contact info.</p>
-<img src="assets/logo.png" alt="Logo">
+    <header>
+        <img src="logo.png" alt="All-In-One Property Solutions Logo" class="logo">
+        <h1>All-In-One Property Solutions LLC</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>Your trusted partner for handyman and property solutions.</p>
+            <p>Reliable, professional service for homes and businesses. No job too small!</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Repairs & Maintenance</li>
+                <li>Painting & Drywall</li>
+                <li>Plumbing Fixes</li>
+                <li>Electrical Work</li>
+                <li>Carpentry</li>
+                <li>Outdoor Maintenance</li>
+                <li>And much more!</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>All-In-One Property Solutions LLC has served our community for over 10 years. Our skilled team is committed to quality work and outstanding customer service.</p>
+            <p>We are fully insured and offer free estimates. Your satisfaction is our top priority!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formStatus"></div>
+            <p>Email: <a href="mailto:info@allinonepropertysolutions.com">info@allinonepropertysolutions.com</a></p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All-In-One Property Solutions LLC. All rights reserved.</p>
+    </footer>
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        document.getElementById("formStatus").textContent = "Thank you for your message! We'll get back to you soon.";
+        this.reset();
+    });
+    </script>
 </body>
 </html>
